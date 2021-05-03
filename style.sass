@@ -1,0 +1,130 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    background: linear-gradient(to bottom, #9a48e0, #4a00e0)
+    font-size: 12px
+    min-height: 100vh
+    font-family: 'Kumbh Sans', sans-serif
+    .brick
+        display: none
+        position: absolute
+
+    main
+        width: 90vw
+        padding: 15px 5vw
+        margin: auto
+        margin-top: 20vh
+        margin-bottom: 5vh
+        min-height: 80vh
+        background-color: #fff
+        background-image: url("../images/bg-pattern-mobile.svg")
+        background-repeat: no-repeat
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+        position: relative
+
+        .desktop
+            display: none
+
+        .mobile
+            position: absolute
+            top: 0
+            left: 47%
+            transform: translate(-50%, -50%)
+        .woman
+            height: 120px
+
+        .faq
+
+            h1
+                padding: 20px 0
+                text-transform: uppercase
+                font-size: 2rem
+                text-align: center
+            h2
+
+                font-size: .9rem
+                padding: 5px 0 5px 0
+                position: relative
+                color: #383535fa
+                font-weight: normal
+
+                svg
+                    position: absolute
+                    top: 10px
+                    right: 0
+                    transition: .3s
+                    transform: rotate(0deg)
+
+                .active
+                    transform: rotate(180deg)
+            p
+                color: #383535bb
+
+                transition: 1s
+                display: none
+                height: 0
+            .active
+                display: block
+                height: auto
+
+            .feature
+                margin-top: 5px
+                border-bottom: solid 1px #3835352a
+
+            .feature:last-child
+                margin-bottom: 21px
+            h2.active
+                font-weight: 700
+@media (min-width:1200px)
+    body
+        min-height: 100vh
+        .brick
+            display: block
+            top: 43%
+            left: 9%
+            z-index: 2
+            transition: .3s
+        .move
+            left: 4%
+
+        main
+            background-image: url("../images/bg-pattern-desktop.svg")
+            background-position: -23vw -15vh
+
+            background-size: 80%
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            width: 70vw
+            margin-top: 10vh
+            overflow: hidden
+
+            .desktop
+                display: block
+
+                img
+                    position: absolute
+                    left: -5%
+                    top: 18%
+
+            .mobile
+                display: none
+            .woman
+                flex-basis: 40%
+
+            .faq
+                flex-basis: 45%
+                h2
+                    line-height: 300%
+                .feature
+                    &:hover
+                        cursor: pointer
+                        *
+                        .brick
+                            left: -5%
+                        h2
+                            color: orange

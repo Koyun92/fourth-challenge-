@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9a48e0), to(#4a00e0));
+  background: linear-gradient(to bottom, #9a48e0, #4a00e0);
+  font-size: 12px;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body .brick {
+  display: none;
+  position: absolute;
+}
+
+body main {
+  width: 90vw;
+  padding: 15px 5vw;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  min-height: 80vh;
+  background-color: #fff;
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body main .desktop {
+  display: none;
+}
+
+body main .mobile {
+  position: absolute;
+  top: 0;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main .woman {
+  height: 120px;
+}
+
+body main .faq h1 {
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body main .faq h2 {
+  font-size: .9rem;
+  padding: 5px 0 5px 0;
+  position: relative;
+  color: #383535fa;
+  font-weight: normal;
+}
+
+body main .faq h2 svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+body main .faq h2 .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main .faq p {
+  color: #383535bb;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+  height: 0;
+}
+
+body main .faq .active {
+  display: block;
+  height: auto;
+}
+
+body main .faq .feature {
+  margin-top: 5px;
+  border-bottom: solid 1px #3835352a;
+}
+
+body main .faq .feature:last-child {
+  margin-bottom: 21px;
+}
+
+body main .faq h2.active {
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-height: 100vh;
+  }
+  body .brick {
+    display: block;
+    top: 43%;
+    left: 9%;
+    z-index: 2;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  body .move {
+    left: 4%;
+  }
+  body main {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: -23vw -15vh;
+    background-size: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70vw;
+    margin-top: 10vh;
+    overflow: hidden;
+  }
+  body main .desktop {
+    display: block;
+  }
+  body main .desktop img {
+    position: absolute;
+    left: -5%;
+    top: 18%;
+  }
+  body main .mobile {
+    display: none;
+  }
+  body main .woman {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  body main .faq {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  body main .faq h2 {
+    line-height: 300%;
+  }
+  body main .faq .feature:hover {
+    cursor: pointer;
+  }
+  body main .faq .feature:hover .brick {
+    left: -5%;
+  }
+  body main .faq .feature:hover h2 {
+    color: orange;
+  }
+}
+/*# sourceMappingURL=style.css.map */

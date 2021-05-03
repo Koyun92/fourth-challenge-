@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+
+  </style>
+</head>
+
+<body>
+  <div class="brick"><img src="images/illustration-box-desktop.svg" alt=""></div>
+  <main>
+    <section class="woman">
+      <div class="mobile"><img src="images/illustration-woman-online-mobile.svg" alt=""></div>
+
+      <div class="desktop"><img src="images/illustration-woman-online-desktop.svg" alt="">
+      </div>
+    </section>
+    <section class="faq">
+      <h1>faq</h1>
+      <div class="feature">
+        <h2> How many team members can I invite?<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg></h2>
+        <p class=""> You can invite up to 2 additional users on the Free plan. There is no limit on team members
+          for the Premium
+          plan.</p>
+
+      </div>
+      <div class="feature">
+        <h2 class=""> What is the maximum file upload size?<svg width="10" height="7"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg></h2>
+        <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </div>
+      <div class="feature">
+        <h2> How do I reset my password<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg></h2>
+        <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </div>
+      <div class="feature">
+        <h2> Can I cancel my subscription?<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg></h2>
+        <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </div>
+      <div class="feature">
+        <h2> Do you provide additional support?<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" /></svg></h2>
+        <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+<script>
+  const buttons = document.querySelectorAll("svg");
+  const paragraph = document.querySelectorAll("p");
+  const title = document.querySelectorAll("h2");
+  const brick = document.querySelector(".brick");
+
+  title[0].addEventListener("click", function () {
+    title[0].classList.toggle("active");
+    paragraph[0].classList.toggle("active");
+    buttons[0].classList.toggle("active")
+
+
+  })
+  title[1].addEventListener("click", function () {
+    title[1].classList.toggle("active");
+    paragraph[1].classList.toggle("active");
+    buttons[1].classList.toggle("active")
+
+  })
+  title[2].addEventListener("click", function () {
+    title[2].classList.toggle("active");
+    paragraph[2].classList.toggle("active");
+    buttons[2].classList.toggle("active");
+
+  })
+  title[3].addEventListener("click", function () {
+    title[3].classList.toggle("active");
+    paragraph[3].classList.toggle("active");
+    buttons[3].classList.toggle("active");
+
+  })
+  title[4].addEventListener("click", function () {
+    title[4].classList.toggle("active");
+    paragraph[4].classList.toggle("active");
+    buttons[4].classList.toggle("active");
+
+  })
+
+  title[0].addEventListener("mouseover", function () {
+    console.log("sad")
+    brick.classList.add("move")
+
+
+  })
+  title[0].addEventListener("mouseleave", function () {
+    console.log("sad")
+    brick.classList.remove("move")
+
+
+  })
+  title[1].addEventListener("mouseover", function () {
+    console.log("sad")
+    brick.classList.add("move")
+
+
+  })
+  title[1].addEventListener("mouseleave", function () {
+    console.log("sad")
+    brick.classList.remove("move")
+
+
+  })
+  title[2].addEventListener("mouseover", function () {
+    console.log("sad")
+    brick.classList.add("move")
+
+
+  })
+  title[2].addEventListener("mouseleave", function () {
+    console.log("sad")
+    brick.classList.remove("move")
+
+
+  })
+  title[3].addEventListener("mouseover", function () {
+    console.log("sad")
+    brick.classList.add("move")
+
+
+  })
+  title[3].addEventListener("mouseleave", function () {
+    console.log("sad")
+    brick.classList.remove("move")
+
+
+  })
+  title[4].addEventListener("mouseover", function () {
+    console.log("sad")
+    brick.classList.add("move")
+
+
+  })
+  title[0].addEventListener("mouseleave", function () {
+    console.log("sad")
+    brick.classList.remove("move")
+
+
+  })
+</script>
+
+</html>
